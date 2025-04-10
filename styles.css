@@ -1,16 +1,26 @@
 @font-face {
-    font-family: "SF UI Text";
-    src: url("fonts/SF-UI-Text-Regular.otf");
+    font-family: TeXGyreSchola;
+    src: url("fonts/TeXGyreSchola/texgyreschola-regular-webfont.woff");
+    font-style: normal;
 }
 
 @font-face {
-    font-family: "Libertinu Regular";
-    src: url("fonts/libertinus-serif/libertinusserif-regular.otf");
+    font-family: TeXGyreSchola;
+    src: url("fonts/TeXGyreSchola/texgyreschola-italic-webfont.woff");
+    font-style: italic;
 }
 
 @font-face {
-    font-family: "Libertinu Semibold";
-    src: url("fonts/libertinus-serif/libertinusserif-semibold.otf");
+    font-family: TeXGyreSchola;
+    src: url("fonts/TeXGyreSchola/texgyreschola-bolditalic-webfont.woff");
+    font-style: italic;
+    font-weight: bold;
+}
+
+@font-face {
+    font-family: TeXGyreSchola;
+    src: url("fonts/TeXGyreSchola/texgyreschola-bold-webfont.woff");
+    font-weight: bold;
 }
 
 * {
@@ -39,7 +49,7 @@ h2 {
     width: 500px;
     margin-left: 100px;
     margin-right: 100px;
-    font: normal 20px/20px "SF UI Text";
+    font: normal 20px/20px "SF UI Text", sans-serif;
     text-align: center;
     margin-top: 15px;
 }
@@ -51,7 +61,7 @@ blockquote.changes {
 .changes, .explanations {
     border-radius: 6px;
     text-align: justify;
-    font: normal 16px/17px "Libertinu Regular";
+    font: normal 16px/17px "TeXGyreSchola";
     padding: 10px;
     margin: 30px 0;
 }
@@ -65,13 +75,13 @@ blockquote.changes {
 }
 
 p.resolutions {
-    font: normal 18px/21px "Libertinu Semibold";
+    font: bold 18px/21px "TeXGyreSchola";
     text-indent: 20px;
     margin: 10px 0;
 }
 
 p.solid_text {
-    font: normal 18px/21px "Libertinu Regular";
+    font: normal 18px/21px "TeXGyreSchola";
     text-align: justify;
     text-indent: 20px;
 }
@@ -88,20 +98,20 @@ h4 {
     display: inline-block;
     width: 700px;
     text-align: center;
-    font: normal 18px "SF UI Text";
+    font: normal 18px "SF UI Text", sans-serif;
 }
 
 h5 {
     display: inline-block;
     width: 700px;
     text-align: center;
-    font: normal 16px "SF UI Text";
+    font: normal 16px "SF UI Text", sans-serif;
     margin-bottom: 15px;
 }
 
 ol > li {
     list-style-position: inside;
-    font: normal 18px/21px "Libertinu Regular";
+    font: normal 18px/21px "TeXGyreSchola";
     text-align: justify;
     text-indent: 20px;
     margin-bottom: 20px;
@@ -109,7 +119,8 @@ ol > li {
 
 ol.level_2 > li {
     list-style-type: none;
-    font-family: "Libertinu Semibold";
+    font-family: "TeXGyreSchola";
+    font-weight: bold;
     padding-left: 40px;
 }
 
