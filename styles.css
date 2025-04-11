@@ -1,4 +1,210 @@
+@font-face {
+    font-family: 'Raleway Regular';
+    src: url('fonts/Raleway/raleway-v4020-regular.woff') format('woff');
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Raleway ExtraBold';
+    src: url('fonts/Raleway/raleway-v4020-extrabold.woff') format('woff');
+    font-weight: bold;
+}
+
+@font-face {
+    font-family: 'Raleway Bold';
+    src: url('fonts/Raleway/raleway-v4020-bold.woff') format('woff');
+    font-weight: bold;
+}
+
 * {
     padding: 0;
     margin: 0;
+}
+
+header {
+    height: 750px;
+    background: url(/img/header_bg.png) center no-repeat;
+}
+
+div#logo {
+    padding-left: 40px;
+    width: 140px;
+    height: 30px;
+    background: url(/img/logo.png) left center no-repeat;
+    background-size: 30px;
+    position: relative;
+    left: 80px;
+    top: 50px;
+}
+
+div#logo:hover {
+    cursor: pointer;
+}
+
+div#logo > p {
+    color: white;
+    font-size: 14px;
+    line-height: 15px;
+    text-transform: uppercase;
+}
+
+p#first_line {
+    font-family: 'Raleway Regular', serif;
+}
+
+p#second_line {
+    font-family: 'Raleway ExtraBold', serif;
+}
+
+div#welcome_banner {
+    width: 90%;
+    height: 320px;
+    margin: 100px auto 0;
+}
+
+div#welcome_banner > article {
+    width: 580px;
+    float: left;
+}
+
+div#welcome_banner h1 {
+    font: bold 55px/55px 'Raleway ExtraBold';
+    color: white;
+    text-transform: uppercase;
+}
+
+div#welcome_banner p {
+    font: normal 18px/36px 'Raleway Regular';
+    color: white;
+}
+
+div#welcome_banner button {
+    width: 160px;
+    height: 55px;
+    background: white;
+    border: none;
+    border-radius: 6px;
+    color: rgb(6, 30, 55);
+    font: bold 15px/55px 'Raleway Bold';
+    text-transform: uppercase;
+}
+
+#buttons > button {
+    margin-top: 40px;
+    margin-left: 30px;
+}
+
+#buttons > button:first-child {
+    margin-left: 0;
+}
+
+div#welcome_banner button:hover {
+    box-shadow: 0 0 20px rgba(0, 0, 0, .15);
+    transition: 0.1s;
+}
+
+div#welcome_banner button:active {
+    box-shadow: 0 0 8px rgba(0, 0, 0, .15);
+    background: rgb(6, 30, 55);
+    color: white;
+}
+
+div#video_cover {
+    width: 600px;
+    height: 320px;
+    background: url(img/video_cover.png) center no-repeat;
+    float: right;
+    outline: 1px solid black;
+    border-radius: 6px;
+}
+
+div#play_video {
+    width: 110px;
+    height: 90px;
+    position: relative;
+    left: 50%;
+    margin-left: -55px;
+    top: 50%;
+    margin-top: -45px;
+}
+
+div#bg_btn_play {
+    width: 60px;
+    height: 60px;
+    border-radius: 6px;
+    border: none;
+    background: rgb(6, 30, 55);
+    margin: 0 auto;
+    box-shadow: 0 0 20px rgba(0, 0, 0, .15);
+}
+
+div#bg_btn_play > div {
+    width: 0;
+    height: 0;
+    border-left: 10px solid white;
+    border-top: 10px solid rgb(6, 30, 55);
+    border-right: 10px solid rgb(6, 30, 55);
+    border-bottom: 10px solid rgb(6, 30, 55);
+    margin-left: 25px;
+    position: relative;
+    top: 20px;
+}
+
+div#bg_btn_play > div:hover {
+    box-shadow: 0 0 20px rgba(0, 0, 0, .15);
+}
+
+div#play_video > p {
+    font: bold 12px 'Raleway Bold';
+    color: rgb(6, 30, 55);
+    text-transform: uppercase;
+    margin-top: 15px;
+}
+
+nav {
+    width: 440px;
+    position: relative;
+    top: 15px;
+    left: 50%;
+    margin-left: -220px;
+    float: left;
+}
+
+nav > a {
+    color: white;
+    text-decoration: none;
+    font: normal 15px 'Raleway Regular';
+}
+nav > a:first-child{
+    margin-left: 0;
+}
+
+nav > a{
+    margin-left: 45px;
+}
+
+nav > a:hover{
+    color: rgb(6, 30, 55);
+}
+
+a#sign_up{
+    float: left;
+    color: white;
+    text-decoration: none;
+    font: normal 15px 'Raleway Regular';
+    position: relative;
+    top: 15px;
+    left: 1050px;
+    display: inline-block;
+    width: 80px;
+    height: 25px;
+    outline: 1px solid white;
+    text-align: center;
+    line-height: 23px;
+    border-radius: 6px;
+}
+
+a#sign_up:hover{
+    color: rgb(6, 30, 55);
+    outline-color: rgb(6, 30, 55);;
 }
