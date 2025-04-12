@@ -118,7 +118,7 @@ div#welcome_banner button:active {
 div#video_cover {
     width: 600px;
     height: 320px;
-    background: url(img/video_cover.png) center no-repeat;
+    background: url("img/video_cover.png") center no-repeat;
     float: right;
     outline: 1px solid black;
     border-radius: 6px;
