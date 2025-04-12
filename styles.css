@@ -16,6 +16,12 @@
     font-weight: bold;
 }
 
+@font-face {
+    font-family: 'Raleway SemiBold';
+    src: url('fonts/Raleway/raleway-v4020-semibold.woff') format('woff');
+    font-weight: bold;
+}
+
 * {
     padding: 0;
     margin: 0;
@@ -175,19 +181,20 @@ nav > a {
     text-decoration: none;
     font: normal 15px 'Raleway Regular';
 }
-nav > a:first-child{
+
+nav > a:first-child {
     margin-left: 0;
 }
 
-nav > a{
+nav > a {
     margin-left: 45px;
 }
 
-nav > a:hover{
+nav > a:hover {
     color: rgb(6, 30, 55);
 }
 
-a#sign_up{
+a#sign_up {
     float: left;
     color: white;
     text-decoration: none;
@@ -204,14 +211,174 @@ a#sign_up{
     border-radius: 6px;
 }
 
-a#sign_up:hover{
+a#sign_up:hover {
     color: rgb(6, 30, 55);
     outline-color: rgb(6, 30, 55);;
 }
 
-section#easy_and_useful{
+section#easy_and_useful {
     width: 100%;
     height: 800px;
+}
 
-    outline: 1px solid blue;
+section#easy_and_useful > p, section#easy_and_useful > h2 {
+    display: inline-block;
+    width: 555px;
+    text-align: center;
+    position: relative;
+    left: 50%;
+    margin-left: -227px;
+}
+
+section#easy_and_useful > h2 {
+    margin-top: 110px;
+    font: bold 45px 'Raleway SemiBold';
+}
+
+p#preamble {
+    font: bold 25px 'Raleway SemiBold';
+    color: #b0bec5;
+    margin-top: 30px;
+}
+
+p#description {
+    font: normal 15px 'Raleway Regular';
+    color: #b0bec5;
+    margin-top: 30px;
+}
+
+#the_block_of_main_theses {
+    width: 100%;
+    height: 210px;
+    margin-top: 100px;
+}
+
+/* Изучение Flexbox не за горами*/
+#the_block_of_main_theses > div {
+    width: 33%;
+    height: 210px;
+    float: left;
+    margin: 0 auto;
+}
+
+#the_block_of_main_theses h3, #the_block_of_main_theses p {
+    text-align: center;
+}
+
+#the_block_of_main_theses h3 {
+    font: bold 20px 'Raleway SemiBold';
+    margin-top: 120px;
+}
+
+#the_block_of_main_theses p {
+    font: normal 15px 'Raleway Regular';
+    color: #b0bec5;
+    margin-top: 25px;
+}
+
+#title_goes_here_1 {
+    background: url("img/title goes here/1.png") top center no-repeat;
+    background-size: 70px;
+}
+
+#title_goes_here_2 {
+    background: url("img/title goes here/2.png") top center no-repeat;
+    background-size: 70px;
+}
+
+#title_goes_here_3 {
+    background: url("img/title goes here/3.png") top center no-repeat;
+    background-size: 70px;
+}
+
+#get_started {
+    width: 160px;
+    height: 55px;
+    background: #1de9b6;
+    border: none;
+    border-radius: 6px;
+    font: bold 15px/55px 'Raleway Bold';
+    text-transform: uppercase;
+    color: white;
+    position: relative;
+    top: 85px;
+    left: 50%;
+    margin-left: -80px;
+    margin-bottom: 85px;
+}
+
+#get_started:hover {
+    box-shadow: 0 0 20px rgba(0, 0, 0, .15);
+    transition: 0.1s;
+}
+
+#get_started:active {
+    box-shadow: 0 0 8px rgba(0, 0, 0, .15);
+    background: white;
+    color: rgb(6, 30, 55);
+}
+
+#easy_and_useful > footer {
+    width: 100%;
+    height: 150px;
+    margin-top: 85px;
+}
+
+div.statistics {
+    width: 25%;
+    height: 150px;
+    float: left;
+}
+
+div#business {
+    background: #80d8ff;
+}
+
+div#downloads {
+    background: #82b1ff;
+}
+
+div#free_installs {
+    background: #b388ff;
+}
+
+div#pro_users {
+    background: #ea80fc;
+}
+
+div.info {
+    width: 170px;
+    height: 60px;
+    margin: 45px auto 0;
+}
+
+.info > .circle {
+    width: 60px;
+    height: 60px;
+    background: white;
+    border-radius: 50%;
+}
+
+.info > p {
+    color: white;
+    font: bold 15px 'Raleway ExtraBold';
+    margin-left: 75px;
+}
+
+p.rate {
+    margin-top: -50px;
+}
+
+p.desc {
+    margin-top: -5px;
+}
+
+.circle > img{
+    width: 24px;
+    height: 24px;
+    position: relative;
+    top: 50%;
+    margin-top: -12px;
+    left: 50%;
+    margin-left: -12px;
 }
