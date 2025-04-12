@@ -23,14 +23,14 @@
 
 header {
     height: 750px;
-    background: url(/img/header_bg.png) center no-repeat;
+    background: url("img/header_bg.png") center no-repeat;
 }
 
 div#logo {
     padding-left: 40px;
     width: 140px;
     height: 30px;
-    background: url(/img/logo.png) left center no-repeat;
+    background: url("img/logo.png") left center no-repeat;
     background-size: 30px;
     position: relative;
     left: 80px;
