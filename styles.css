@@ -3,10 +3,27 @@
     margin: 0;
 }
 
-p{
+p {
     display: inline;
     padding: 10px;
     border: 1px dashed royalblue;
     box-sizing: border-box;
     margin-left: 20px;
+}
+
+a {
+    display: block;
+    width: 100px;
+    border: 2px solid mediumpurple;
+    padding: 5px;
+    margin-bottom: 10px;
+    text-decoration: none;
+    color: rgb(120, 120, 120);
+    font: normal 15px Arial;
+    text-align: center;
+}
+
+a:hover {
+    text-decoration: underline;
+    color: rgb(50, 50, 50);
 }
