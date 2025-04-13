@@ -1,54 +1,54 @@
 @font-face {
-    font-family: "PlayfairDisplay";
-    src: url("fonts/PlayfairDisplay-Regular.ttf");
-    font-style: normal;
-    font-weight: normal;
+    font-family: "Poppins";
+    font-weight: bold;
+    src: url("fonts/Poppins-Bold.ttf");
 }
-
-/*@font-face {*/
-/*    font-family: "PlayfairDisplay";*/
-/*    src: url("fonts/PlayfairDisplay-Bold.ttf");*/
-/*    font-weight: bold;*/
-/*}*/
 
 * {
     padding: 0;
     margin: 0;
 }
 
-header{
-    height: 500px;
-    background: url("img/header_bg.jpg") center no-repeat;
-}
-
-header > img[src="img/logo.png"]{
-    margin-top: 35px;
-    margin-left: 120px;
-}
-
-header > nav{
-    position: absolute;
-    right: 35px;
-    top: 50px;
-    width: 520px;
-    height: 18px;
-    margin-right: 35px;
+section{
+    height: 180px;
     text-align: center;
 }
 
-header > nav > a{
-    text-transform: uppercase;
-    color: #fff;
-    text-decoration: none;
-    font: normal 18px/18px "PlayfairDisplay";
-    margin-right: 40px;
+section > h2{
+    font: bold 60px "Poppins";
+    margin-bottom: 125px;
 }
 
-header > nav > a:last-child{
-    margin-right: 0;
+div#clients{
+    display: flex;
+    width: 1030px;
+    height: 50px;
+    margin: 0 auto;
+    justify-content: space-evenly;
 }
 
-/* Временная мера*/
-header > nav > a:hover{
-    color: crimson;
+div#clients > div{
+    width: 140px;
+    height: 25px;
+    background-size: auto 25px;
+}
+
+#airbnb{
+    background: url("img/clients/airbnb.png") center no-repeat;
+}
+
+#envato{
+    background: url("img/clients/envato.png") center no-repeat;
+}
+
+#forbes{
+    background: url("img/clients/forbes.png") center no-repeat;
+}
+
+#slack{
+    background: url("img/clients/slack.png") center no-repeat;
+}
+
+#sundance{
+    background: url("img/clients/sundance.png") center no-repeat;
 }
