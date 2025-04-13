@@ -1,29 +1,54 @@
+@font-face {
+    font-family: "PlayfairDisplay";
+    src: url("fonts/PlayfairDisplay-Regular.ttf");
+    font-style: normal;
+    font-weight: normal;
+}
+
+/*@font-face {*/
+/*    font-family: "PlayfairDisplay";*/
+/*    src: url("fonts/PlayfairDisplay-Bold.ttf");*/
+/*    font-weight: bold;*/
+/*}*/
+
 * {
     padding: 0;
     margin: 0;
 }
 
-p {
-    display: inline;
-    padding: 10px;
-    border: 1px dashed royalblue;
-    box-sizing: border-box;
-    margin-left: 20px;
+header{
+    height: 500px;
+    background: url("img/header_bg.jpg") center no-repeat;
 }
 
-a {
-    display: block;
-    width: 100px;
-    border: 2px solid mediumpurple;
-    padding: 5px;
-    margin-bottom: 10px;
-    text-decoration: none;
-    color: rgb(120, 120, 120);
-    font: normal 15px Arial;
+header > img[src="img/logo.png"]{
+    margin-top: 35px;
+    margin-left: 120px;
+}
+
+header > nav{
+    position: absolute;
+    right: 35px;
+    top: 50px;
+    width: 520px;
+    height: 18px;
+    margin-right: 35px;
     text-align: center;
 }
 
-a:hover {
-    text-decoration: underline;
-    color: rgb(50, 50, 50);
+header > nav > a{
+    text-transform: uppercase;
+    color: #fff;
+    text-decoration: none;
+    font: normal 18px/18px "PlayfairDisplay";
+    margin-right: 40px;
+}
+
+header > nav > a:last-child{
+    margin-right: 0;
+}
+
+/* Временная мера*/
+header > nav > a:hover{
+    color: crimson;
 }
