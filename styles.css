@@ -3,23 +3,10 @@
     margin: 0;
 }
 
-body {
-    background: #3C8BE5;
-}
-
-div#shield {
-    width: 200px;
-    height: 200px;
-    background: #364B63;
-    margin: 100px auto;
-    border: 4px solid #C3E309;
+p{
+    width: 280px;
+    border: 2px dashed royalblue;
     box-sizing: border-box;
-    border-radius: 5% 5% 50% 50%;
-    box-shadow: 0 5px 15px rgba(15, 15, 15, .5);
-}
-
-div#shield > p {
-    text-align: center;
-    font: bold 75px/175px Arial;
-    color: white;
+    padding: 10px;
+    margin-bottom: 20px;
 }
