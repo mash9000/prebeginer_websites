@@ -7,48 +7,42 @@
 * {
     padding: 0;
     margin: 0;
+    text-decoration: none;
 }
 
-section{
-    height: 180px;
-    text-align: center;
-}
-
-section > h2{
-    font: bold 60px "Poppins";
-    margin-bottom: 125px;
-}
-
-div#clients{
+#traffic_lights {
+    width: 200px;
+    height: 600px;
     display: flex;
-    width: 1030px;
-    height: 50px;
-    margin: 0 auto;
     justify-content: space-evenly;
+    flex-direction: column;
+    background: #434343;
+    margin: 50px auto 0;
 }
 
-div#clients > div{
-    width: 140px;
-    height: 25px;
-    background-size: auto 25px;
+.lights {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    margin-left: 25px;
+    background: #6D6D6D;
 }
 
-#airbnb{
-    background: url("img/clients/airbnb.png") center no-repeat;
+.lights:hover{
+    transition: .25s;
 }
 
-#envato{
-    background: url("img/clients/envato.png") center no-repeat;
+#red:hover {
+    background: red;
+    box-shadow: 0 0 10px red;
 }
 
-#forbes{
-    background: url("img/clients/forbes.png") center no-repeat;
+#yellow:hover {
+    background: yellow;
+    box-shadow: 0 0 10px yellow;
 }
 
-#slack{
-    background: url("img/clients/slack.png") center no-repeat;
-}
-
-#sundance{
-    background: url("img/clients/sundance.png") center no-repeat;
+#green:hover {
+    background: green;
+    box-shadow: 0 0 10px green;
 }
