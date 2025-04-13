@@ -3,158 +3,23 @@
     margin: 0;
 }
 
-@font-face {
-    font-family: 'Source Code Pro';
-    src: url('fonts/Source_Code_Pro/SourceCodePro-VariableFont_wght.ttf');
-}
-
-@font-face {
-    font-family: 'Montserrat';
-    src: url('./fonts/Montserrat/Montserrat-VariableFont_wght.ttf');
-}
-
 body {
-    background: #efefef;
+    background: #3C8BE5;
 }
 
-img#bg_image {
-    width: 500px;
-    position: absolute;
-    left: 50%;
-    margin-left: -250px;
-    top: 100px;
+div#shield {
+    width: 200px;
+    height: 200px;
+    background: #364B63;
+    margin: 100px auto;
+    border: 4px solid #C3E309;
+    box-sizing: border-box;
+    border-radius: 5% 5% 50% 50%;
+    box-shadow: 0 5px 15px rgba(15, 15, 15, .5);
 }
 
-div#bg_circle {
-    width: 500px;
-    height: 500px;
-    border-radius: 50%;
-    position: absolute;
-    top: 50%;
-    margin-top: -250px;
-    left: 50%;
-    margin-left: -250px;
-    background: #e6ba38;
-}
-
-img#logo {
-    width: 150px;
-    margin-top: 50px;
-    margin-left: 50px;
-    float: left;
-}
-
-header > ul {
-    display: block;
-    width: 500px;
-    position: absolute;
-    left: 50%;
-    margin-left: -250px;
-    top: 55px;
-    float: left;
-    list-style-type: none;
-    font: normal 20px Montserrat;
-    text-transform: uppercase;
-}
-
-header li {
-    float: left;
-    margin-left: 52px;
-}
-
-header a{
-    color: #272727;
-    text-decoration: none;
-}
-
-header li:hover{
-    text-decoration: underline;
-    cursor: pointer;
-}
-
-header li:first-child {
-    margin-left: 0;
-}
-
-div#menu{
-    width: 50px;
-    height: 31px;
-    float: right;
-    margin-right: 50px;
-    margin-top: 50px;
-}
-
-div#menu:hover{
-    cursor: pointer;
-}
-
-div.horizontal_line{
-    width: inherit;
-    height: 7px;
-    background: #222222;
-    margin-bottom: 5px;
-}
-div.horizontal_line:last-child{
-    margin-bottom: 0;
-}
-
-p#quote{
-    display: inline-block;
-    position: relative;
-    left: -80px;
-    top: 250px;
-    font: normal 20px Montserrat;
-    color: #222222;
-}
-p#quote>a{
-    color: #222222;
-    font: bold 20px/40px Montserrat;
-    text-decoration: none;
-    margin-top: 10px;
-}
-
-p#phrase_of_the_day{
-    position: absolute;
-    top: 350px;
-    left: 875px;
-    width: 400px;
-    font: bold 100px/80px Montserrat;
-    display: inline-block;
-}
-
-footer{
-    width: 100%;
-    height: 50px;
-    margin-left: 52px;
-    position: absolute;
-    bottom: 52px;
-}
-
-footer div.icons{
-    float: left;
-    width: 50px;
-    height: 50px;
-    border-radius: 50%;
-    margin-left: 15px;
-    background: #222;
-}
-
-footer div.icons:hover{
-    cursor: pointer;
-}
-
-div#facebook{
-    background: url(img/icons/facebook.png) center/30px no-repeat, linear-gradient(#222, #222);
-}
-
-div#instagram{
-    background: url(img/icons/instagram.png) center/30px no-repeat, linear-gradient(#222, #222);
-}
-
-div#twitter{
-    background: url(img/icons/twitter.png) center/30px no-repeat, linear-gradient(#222, #222);
-}
-
-div#whatsapp{
-    background: url(img/icons/whatsapp.png) center/30px no-repeat, linear-gradient(#222, #222);
+div#shield > p {
+    text-align: center;
+    font: bold 75px/175px Arial;
+    color: white;
 }
