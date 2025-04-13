@@ -1,48 +1,55 @@
-@font-face {
-    font-family: "Poppins";
-    font-weight: bold;
-    src: url("fonts/Poppins-Bold.ttf");
-}
-
 * {
     padding: 0;
     margin: 0;
     text-decoration: none;
 }
 
-#traffic_lights {
-    width: 200px;
-    height: 600px;
-    display: flex;
-    justify-content: space-evenly;
-    flex-direction: column;
-    background: #434343;
-    margin: 50px auto 0;
-}
-
-.lights {
-    width: 150px;
-    height: 150px;
+#head {
+    width: 300px;
+    height: 300px;
     border-radius: 50%;
-    margin-left: 25px;
-    background: #6D6D6D;
-}
-
-.lights:hover{
-    transition: .25s;
-}
-
-#red:hover {
-    background: red;
-    box-shadow: 0 0 10px red;
-}
-
-#yellow:hover {
+    position: relative;
     background: yellow;
-    box-shadow: 0 0 10px yellow;
 }
 
-#green:hover {
-    background: green;
-    box-shadow: 0 0 10px green;
+#eyes {
+    width: 200px;
+    left: 50%;
+    margin-left: -100px;
+    height: 50px;
+    position: absolute;
+    top: 50px;
+}
+
+.eye {
+    display: inline-block;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background: #000;
+    position: absolute;
+}
+
+.eye:last-child {
+    right: 0;
+}
+
+#mouth_1 {
+    width: 100px;
+    height: 50px;
+    border-radius: 50%;
+    position: absolute;
+    left: 100px;
+    bottom: 55px;
+    background: #000;
+}
+
+#mouth_2 {
+    width: 200px;
+    height: 75px;
+    border-radius: 50%;
+    background: yellow;
+    position: absolute;
+    left: 50px;
+    bottom: 75px;
 }
