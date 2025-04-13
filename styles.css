@@ -4,9 +4,9 @@
 }
 
 p{
-    width: 280px;
-    border: 2px dashed royalblue;
-    box-sizing: border-box;
+    display: inline;
     padding: 10px;
-    margin-bottom: 20px;
+    border: 1px dashed royalblue;
+    box-sizing: border-box;
+    margin-left: 20px;
 }
