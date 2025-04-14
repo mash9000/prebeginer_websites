@@ -4,18 +4,36 @@
     text-decoration: none;
 }
 
-#parent {
-    width: 300px;
-    height: 300px;
-    border: 1px solid #393939;
-    position: relative;
+div#logo {
+    position: fixed;
+    width: 100px;
+    height: 50px;
+    top: 25px;
+    left: 25px;
+    background: crimson;
+    font: bold 15px/50px Arial;
+    text-align: center;
 }
 
-.color {
-    position: absolute;
-    background: red;
-    top: 20px;
-    right: 30px;
-    bottom: 40px;
-    left: 50px;
+div#logo:hover {
+    color: beige;
+    transition: 150ms;
+    cursor: pointer;
+    border-radius: 15px;
+}
+
+h2 {
+    text-align: center;
+    font: bold 25px Arial;
+    margin-bottom: 40px;
+    text-transform: uppercase;;
+}
+
+p {
+    display: inline-block;
+    width: 500px;
+    margin: 0 25% 20px;
+    font: normal 15px/18px Arial;
+    text-indent: 20px;
+    text-align: justify;
 }
