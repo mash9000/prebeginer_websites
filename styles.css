@@ -9,7 +9,7 @@
     height: 500px;
     display: flex;
     flex-direction: row-reverse;
-    justify-content: flex-start;
+    justify-content: flex-end;
     margin: 50px auto 0;
     outline: 1px solid royalblue;
 }
