@@ -1,7 +1,7 @@
 @font-face {
-    font-family: "Poppins";
-    src: url("fonts/Poppins-Bold.ttf");
-    font-weight: bold;
+    font-family: "PFDinTextCompPro Regular";
+    src: url("fonts/pfdintextpro-regular.ttf");
+    font-style: normal;
 }
 
 * {
@@ -10,17 +10,76 @@
     text-decoration: none;
 }
 
-p {
-    width: 500px;
-    margin: 20px auto 0;
-    padding: 20px;
-    text-align: justify;
-    border: 1px solid #000;
+nav {
+    width: 175px;
+    height: 100%;
+    background: #2f3032;
+    position: fixed;
+    left: 0;
+    top: 0;
+    text-align: center;
 }
 
-img {
-    width: 50px;
-    height: auto;
-    margin: 10px 0 0 10px;
-    float: right;
+nav > a:first-child {
+    margin-top: 35px;
+    margin-bottom: 40px;
+}
+
+nav > a {
+    display: block;
+    width: 175px;
+    height: 38px;
+    color: #efefef;
+    text-transform: uppercase;
+    font: normal 14px/38px "PFDinTextCompPro Regular";
+    border-left: 3px solid #2f3032;
+    box-sizing: border-box;
+}
+
+nav > a:hover {
+    background: #252628;
+    border-left: 3px solid #d9be8f;
+    box-sizing: border-box;
+}
+
+nav > a:hover:first-child {
+    border-left: 3px solid #2f3032;
+    box-sizing: border-box;
+    background: #2f3032;
+}
+
+nav > footer {
+    width: 175px;
+    margin-top: 280px;
+}
+
+nav > footer > span {
+    font: normal 14px "PFDinTextCompPro Regular";
+    text-transform: uppercase;
+}
+
+nav > footer > span:first-child {
+    color: #737373;
+    margin-right: 10px;
+}
+
+nav > footer > span:nth-child(2) {
+    color: #efefef;
+}
+
+nav > footer > span:hover{
+    cursor: pointer;
+}
+
+div#social_networks {
+    width: 90px;
+    margin: 25px auto 0;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+div#social_networks img {
+    display: inline;
+    width: 10px;
+    height: 10px;
 }
