@@ -1,15 +1,3 @@
-@font-face {
-    font-family: "PFDinTextCompPro Regular";
-    src: url("fonts/pfdintextpro-regular.ttf");
-    font-style: normal;
-}
-
-* {
-    padding: 0;
-    margin: 0;
-    text-decoration: none;
-}
-
 nav {
     width: 175px;
     height: 100%;
