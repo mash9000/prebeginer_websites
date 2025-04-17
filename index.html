@@ -38,19 +38,83 @@
     </footer>
 </nav>
 <header>
-    <div id="search">
-        <input type="search">
-        <div class="line"></div>
+    <div id="search_and_information">
+        <div id="space_for_search" class="lines">
+            <input type="search">
+        </div>
+        <img alt="branch" src="img/branch.png">
+        <div id="notification_and_enter_to_account" class="lines">
+            <img alt="notify" src="img/bell%20copy.png">
+            <div id="red_point"></div>
+            <img alt="user" src="img/user%20copy.png">
+        </div>
     </div>
-    <img alt="branch" src="img/branch.png">
-    <div id="notification_and_account">
-        <div id="alarm"></div>
-        <img class="for_user" alt="notification" src="img/bell%20copy.png">
-        <img class="for_user" alt="account" src="img/user%20copy.png">
-        <div class="line"></div>
-    </div>
-    <div id="parameters">
-        <h2>подбор рецептов</h2>
+    <h2>подбор рецептов</h2>
+    <div id="filter">
+        <div id="select">
+            <select name="pastries_and_desserts">
+                <option value="">Выпечка и десерты</option>
+                <option value="strawberry_pie">Клубничный пирог</option>
+                <option value="raspberry_cake">Малиновый тарт</option>
+                <option value="cupcakes_with_berries">Кексы с ягодами</option>
+                <option value="pies with cherries">Пирожки с черешней</option>
+                <option value="apple strudel">Яблочный штрудель</option>
+                <option value="pear_pie">Грушевый пирог</option>
+                <option value="charlotte_with_apples">Шарлотка с яблоками</option>
+                <option value="fruits_shortbread_cookies_with_jam">Песочное печенье
+                    с вареньем
+                </option>
+                <option value="cupcake_with_citrus">Кекс с цитрусовыми</option>
+                <option value="meringue">Безе</option>
+                <option value="marshmallows">Зефир</option>
+                <option value="crumble_with_marshmallows">Крамбл с ягодами</option>
+                <option value="pudding">Пудинг</option>
+                <option value="souffle">Суфле</option>
+                <option value="mousse">Мусс</option>
+            </select>
+            <select name="any_dish">
+                <option value="">Любое блюдо</option>
+                <option value="appetizers_cold">Закуски холодные</option>
+                <option value="appetizers_hot">Закуски горячие</option>
+                <option value="first_courses">Первые блюда</option>
+                <option value="second_courses">Вторые блюда</option>
+                <option value="meat_dishes">Мясные блюда</option>
+                <option value="grilled">Гриль</option>
+                <option value="pizza">Пицца</option>
+                <option value="smoked">Копчёности</option>
+                <option value="meats_sausages">Колбасные изделия</option>
+                <option value="porridges">Каши</option>
+                <option value="side_dishes">Гарниры</option>
+            </select>
+            <select name="any_kitchen">
+                <option value="">Любая кухня</option>
+                <option value="asian_cuisine">Азиатская кухня</option>
+                <option value="oriental_cuisine">Восточная кухня</option>
+                <option value="european_cuisine">Европейская кухня</option>
+                <option value="american_cuisine">Американская кухня</option>
+                <option value="indian_cuisine">Индийская кухня</option>
+                <option value="japan_cuisine">Японская кухня</option>
+                <option value="mediterranean_cuisine">Средиземноморская кухня</option>
+            </select>
+            <select name="any_menu">
+                <option value="">Любое меню</option>
+                <option value="a_la_cart">À la carte</option>
+                <option value="tabldot">Table d’hôte</option>
+                <option value="carte_du_jour">Carte du jour</option>
+                <option value="cycle_menu">Циклическое меню</option>
+                <option value="tasting_menu">Дегустационное меню</option>
+                <option value="season_menu">Сезонное меню</option>
+                <option value="the_buffet">Шведский стол</option>
+            </select>
+            <select name="level">
+                <option value="">Сложность</option>
+                <option value="lite">Лёгкий</option>
+                <option value="medium">Средний</option>
+                <option value="strong">Сложный</option>
+            </select>
+        </div>
+        <a href="#">Ингредиенты, детали</a>
+        <a href="#">Подобрать рецепты</a>
     </div>
 </header>
 <main>
