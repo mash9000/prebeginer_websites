@@ -10,7 +10,7 @@
     width: 500px;
     height: 500px;
     display: flex;
-    align-items: end;
+    align-items: start;
     flex-direction: column-reverse;
     justify-content: center;
     outline: 1px solid royalblue;
