@@ -4,14 +4,15 @@
     text-decoration: none;
 }
 
+/*Практика на выравнивание по осям в CSS*/
+
 #parent {
     width: 500px;
     height: 500px;
     display: flex;
-    flex-direction: column;
-    justify-content: flex-start;
-    align-items: center;
-    margin: 50px auto 0;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: end;
     outline: 1px solid royalblue;
 }
 
@@ -24,22 +25,19 @@
 }
 
 .size1 {
-    width: 25px;
-    height: 54px;
-    font-size: 30px;
-    line-height: 54px;
+    width: 60px;
+    height: 60px;
+    line-height: 60px;
 }
 
 .size2 {
-    width: 35px;
-    height: 64px;
-    font-size: 30px;
-    line-height: 64px;
+    width: 60px;
+    height: 60px;
+    line-height: 60px;
 }
 
 .size3 {
     width: 60px;
-    height: 10px;
-    font-size: 10px;
-    line-height: 10px;
+    height: 60px;
+    line-height: 60px;
 }
