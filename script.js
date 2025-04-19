@@ -1,57 +1,28 @@
 "use strict";
 
-console.log(randomDesc('female', 'Ольга'));
+console.log(calc(1, 3, 'multiplication'));
 
-function solveTheQuadraticEquation(a, b, c) {
-    let D = b ** 2 - 4 * a * c;
-    if (D < 0) {
-        return null;
-    } else if (D == 0) {
-        return {x: -b / (2 * a)};
-    } else if (D > 0) {
-        return {
-            x1: (-b - Math.sqrt(D)) / (2 * a),
-            x2: (-b + Math.sqrt(D)) / (2 * a),
-        };
-    }
-}
-
-function randomDesc(gender, name) {
-    if (checkGender(gender) && checkName(name)) {
-        let descMale = [
-            "Ужасный",
-            "Весёлый",
-            "Отвратительный",
-            "Грустный",
-            "Тактичный",
-        ];
-
-        let descFemale = [
-            "Ужасная",
-            "Весёлая",
-            "Отвратительная",
-            "Грустная",
-            "Тактичная",
-        ];
-
-        if (gender == "male") {
-            return descMale[getRandomInt(descMale.length - 1)] + " " + name;
-        } else {
-            return descFemale[getRandomInt(descFemale.length - 1)] + " " + name;
+function calc(value1, value2, operator) {
+    if (isNumber(value1) && isNumber(value2) && isOperator(operator)) {
+        switch (operator) {
+            case 'plus':
+                return value1 + value2;
+            case 'minus':
+                return value1 - value2;
+            case 'multiplication':
+                return value1 * value2;
+            case 'divide':
+                return value1 / value2;
         }
     } else {
-        alert("Пшёл нахуй!");
+        alert('Иди на хер!');
     }
 }
 
-function checkGender(gender) {
-    return gender != null && (gender == "male" || gender == "female");
+function isNumber(value) {
+    return (typeof value) == 'number';
 }
 
-function checkName(name) {
-    return name != null;
-}
-
-function getRandomInt(max) {
-    return Math.floor(Math.random() * max);
+function isOperator(operator) {
+    return operator === 'plus' || operator === 'minus' || operator === 'multiplication' || operator === 'divide';
 }
