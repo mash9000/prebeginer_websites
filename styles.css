@@ -4,26 +4,30 @@
     text-decoration: none;
 }
 
-/* Плиточка в грид в CSS*/
+/* Создание меню в CSS*/
 
-#parent {
-    width: 600px;
-    height: 400px;
-    margin: 0 auto;
-    display: grid;
-    grid-template: 1fr 1fr 1fr / 1fr 1fr 1fr 1fr;
-    gap: 10px;
+nav {
+    width: 500px;
+    height: 50px;
+    margin: 25px auto 0;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
 }
 
-div.elements {
-    height: 134px;
-    background: #98ccff;
-    text-align: center;
-    font: bold 40px/134px "Arial";
-    box-shadow: 0 1px 4px rgba(0, 0, 0, .3);
+nav > a {
+    width: 90px;
+    height: inherit;
+    background: #38a256;
     color: #fff;
+    font: normal 15px/50px "Arial";
+    text-align: center;
+    border: 1px solid #38a256;
+    box-sizing: border-box;
 }
 
-#el12 {
-    display: none;
+nav > a:hover {
+    background: #fff;
+    color: #38a256;
 }
