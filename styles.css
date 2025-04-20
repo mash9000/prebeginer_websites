@@ -8,7 +8,6 @@
 
 main {
     width: 700px;
-    border: 1px solid rgb(72, 72, 72);
     box-sizing: border-box;
     margin: 50px auto 0;
     display: flex;
@@ -22,7 +21,7 @@ nav {
     display: flex;
     flex-direction: row;
     align-items: center;
-    background: rgb(72, 72, 72);
+    background: #ffa91b;
 }
 
 nav > a {
@@ -35,30 +34,62 @@ nav > a {
 
 nav > a:hover {
     background: #fff;
-    color: rgb(72, 72, 72);
+    color: #ffa91b;
 }
 
 div#content {
-    margin-top: 15px;
+    padding: 10px;
+    border: 1px solid #ffa91b;
 }
 
-div#content > h3 {
-    font-size: 35px;
+div#content h1, div#content p, div#content a {
+    color: #ffa91b;
+}
+
+div#content h1 {
     text-align: center;
-    font-weight: bold;
+    font-weight: normal;
+    margin-bottom: 15px;
+    font-size: 30px;
+}
+
+div#content p {
+    text-align: justify;
+    font-size: 17px;
+    line-height: 30px;
+    text-indent: 30px;
     margin-bottom: 15px;
 }
 
-div#content > p {
-    margin: 10px;
-    font-size: 16px;
-}
-
-div#content a {
+p > a {
+    text-decoration: underline;
     font-weight: bold;
 }
 
-div#content a:hover {
+div#content p > a:hover {
+    color: #000;
+    text-decoration: none;
+}
+
+footer {
+    width: 300px;
+    height: 40px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+footer > a {
+    width: 60px;
+    height: inherit;
+    text-align: center;
+    font: bold 10px/40px "Arial";
+    color: #ffa91b;
+}
+
+footer > a:hover {
+    color: #000;
     text-decoration: underline;
-    color: green;
 }
