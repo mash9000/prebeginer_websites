@@ -2,6 +2,8 @@
     padding: 0;
     margin: 0;
     text-decoration: none;
+    color: #000;
+    font-size: 14px;
 }
 
 /* Простые одноколоночные макеты сайтов в CSS*/
@@ -9,87 +11,45 @@
 main {
     width: 700px;
     box-sizing: border-box;
-    margin: 50px auto 0;
+    margin: 25px auto 0;
     display: flex;
     flex-direction: column;
     align-items: start;
 }
 
-nav {
-    width: inherit;
-    height: 40px;
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    background: #ffa91b;
-}
-
-nav > a {
-    width: 90px;
-    height: inherit;
-    font: bold 15px/40px "Arial";
-    text-align: center;
-    color: #fff;
-}
-
-nav > a:hover {
-    background: #fff;
-    color: #ffa91b;
-}
-
-div#content {
-    padding: 10px;
-    border: 1px solid #ffa91b;
-}
-
-div#content h1, div#content p, div#content a {
-    color: #ffa91b;
-}
-
-div#content h1 {
-    text-align: center;
+main > h1 {
     font-weight: normal;
-    margin-bottom: 15px;
     font-size: 30px;
+    width: inherit;
+    text-align: center;
 }
 
-div#content p {
-    text-align: justify;
-    font-size: 17px;
-    line-height: 30px;
-    text-indent: 30px;
-    margin-bottom: 15px;
+article {
+    width: inherit;
+    border: 1px solid #000;
+    box-sizing: border-box;
+    padding: 20px;
+    margin: 20px 0;
 }
 
-p > a {
+article > a:hover {
     text-decoration: underline;
+}
+
+article > a.h1 {
+    font-size: 25px;
+    color: blue;
     font-weight: bold;
 }
 
-div#content p > a:hover {
-    color: #000;
-    text-decoration: none;
+article > p {
+    font-size: 17px;
+    margin: 17px 0;
+    text-align: justify;
 }
 
-footer {
-    width: 300px;
-    height: 40px;
-    margin: 0 auto;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
-}
-
-footer > a {
-    width: 60px;
-    height: inherit;
-    text-align: center;
-    font: bold 10px/40px "Arial";
-    color: #ffa91b;
-}
-
-footer > a:hover {
-    color: #000;
-    text-decoration: underline;
+article > a:last-child {
+    float: right;
+    font-size: 17px;
+    color: blue;
 }
