@@ -6,3 +6,47 @@
     font-size: 14px;
 }
 
+main {
+    display: grid;
+    grid-template: .25fr .75fr / .25fr .5fr .25fr;
+    gap: 1em;
+}
+
+.outline {
+    text-align: center;
+    padding: 1em;
+
+    outline: 1px dashed royalblue;
+}
+
+header {
+    grid-column: 1/4;
+    grid-row: 1/1;
+    height: 100px;
+}
+
+#left_aside {
+    grid-column: 1/2;
+    grid-row: 2/2;
+
+    height: 500px;
+}
+
+#right_aside {
+    grid-column: 3/4;
+    grid-row: 2/2;
+
+    height: 500px;
+}
+
+article {
+    grid-column: 2/3;
+    grid-row: 2/2;
+}
+
+footer {
+    grid-column: 1/4;
+    grid-row: 3/3;
+
+    height: 100px;
+}
