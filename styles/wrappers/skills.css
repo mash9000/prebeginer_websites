@@ -1,0 +1,24 @@
+div#skills {
+    width: 1170px;
+    height: 418px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+div#skills > figure {
+    width: 360px;
+    height: 224px;
+}
+
+div#skills figcaption {
+    font: bold 24px sans-serif;
+    text-transform: uppercase;
+    margin: 20px 0;
+}
+
+p.description {
+    font: normal 14px/26px sans-serif;
+    color: #5c5c5c;
+}
