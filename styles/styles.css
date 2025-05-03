@@ -1,17 +1,22 @@
 #parent {
-    width: 200px;
-    display: flex;
-    flex-direction: row;
-    outline: 1px solid royalblue;
+    width: 500px;
+    height: 500px;
+    display: grid;
+    grid-template: repeat(2, 100px) / repeat(3, 100px);
+    gap: 10px;
+    place-items: end end;
+    place-content: center end;
+    border: 2px solid royalblue;
+    box-sizing: border-box;
 }
 
 .child {
-    width: 100px;
-    height: 80px;
-    outline: 1px dashed crimson;
+    width: 50px;
+    height: 50px;
+    border: 1px solid crimson;
+    box-sizing: border-box;
 }
 
-.sprig {
-    width: 150px;
-    flex-shrink: 0;
+.elem {
+    place-self: start end;
 }
