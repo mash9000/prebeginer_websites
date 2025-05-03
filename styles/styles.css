@@ -1,0 +1,17 @@
+#parent {
+    width: 200px;
+    display: flex;
+    flex-direction: row;
+    outline: 1px solid royalblue;
+}
+
+.child {
+    width: 100px;
+    height: 80px;
+    outline: 1px dashed crimson;
+}
+
+.sprig {
+    width: 150px;
+    flex-shrink: 0;
+}
