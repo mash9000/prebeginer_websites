@@ -1,0 +1,12 @@
+@media (max-width: 1920px) {
+    p {
+        width: 1900px;
+        margin-top: 115px;
+        font-size: 105px;
+        color: crimson;
+    }
+
+    p:after{
+        content: ' (1920)';
+    }
+}

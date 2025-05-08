@@ -1,22 +1,14 @@
-#parent {
-    width: 500px;
-    height: 500px;
-    display: grid;
-    grid-template: repeat(2, 100px) / repeat(3, 100px);
-    gap: 10px;
-    place-items: end end;
-    place-content: center end;
-    border: 2px solid royalblue;
-    box-sizing: border-box;
+body {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
 }
 
-.child {
-    width: 50px;
-    height: 50px;
-    border: 1px solid crimson;
-    box-sizing: border-box;
-}
-
-.elem {
-    place-self: start end;
+p {
+    font-weight: bold;
+    font-family: Arial, sans-serif;
+    text-transform: uppercase;
+    text-align: center;
 }

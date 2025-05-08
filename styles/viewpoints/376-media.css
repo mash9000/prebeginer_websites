@@ -1,0 +1,12 @@
+@media (max-width: 376px) {
+    p {
+        width: 200px;
+        margin-top: 50px;
+        font-size: 25px;
+        color: crimson;
+    }
+
+    p:after{
+        content: ' (376)';
+    }
+}
