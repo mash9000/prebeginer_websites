@@ -1,12 +1,8 @@
 @media (max-width: 768px) {
-    p {
-        width: 700px;
-        margin-top: 85px;
-        font-size: 65px;
-        color: crimson;
-    }
-
-    p:after{
-        content: ' (768)';
+   div {
+        width: 125px;
+        height: 50px;
+        font-size: 35px;
+        line-height: 50px;
     }
 }
