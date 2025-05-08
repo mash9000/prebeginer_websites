@@ -6,10 +6,11 @@
 }
 
 #grid > div {
-    width: calc(96% / 4);
+    width: 200px;
     height: 75px;
     box-sizing: border-box;
     border: 1px solid crimson;
     font: bold 30px/75px sans-serif;
     text-align: center;
+    margin: calc(.75% / 2);
 }
