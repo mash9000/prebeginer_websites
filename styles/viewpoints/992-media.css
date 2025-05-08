@@ -1,5 +1,5 @@
 @media (max-width: 992px) {
     #grid > div {
-        width: calc(96% / 4 - .75% * 3);
+        width: calc(96% / 4 - 10px);
     }
 }
