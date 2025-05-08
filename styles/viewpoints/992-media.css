@@ -1,8 +1,5 @@
 @media (max-width: 992px) {
-    div {
-        width: 175px;
-        height: 60px;
-        font-size: 40px;
-        line-height: 60px;
+    #grid > div {
+        width: calc(96% / 3);
     }
 }

@@ -1,15 +1,5 @@
 @media (max-width: 576px) {
-    body {
-        display: block;
-        padding-top: 50px;
-    }
-
-    div {
-        display: block;
-        width: 200px;
-        height: 75px;
-        margin: 0 auto 10px;
-        font-size: 50px;
-        line-height: 75px;
+    #grid > div  {
+        width: 96%;
     }
 }
