@@ -1,16 +1,16 @@
 @font-face {
   font-family: "Roboto Slab Regular";
-  src: url("fonts/Roboto Slab/RobotoSlab-Regular.ttf");
+  src: url("../fonts/Roboto Slab/RobotoSlab-Regular.ttf");
   font-style: normal;
 }
 @font-face {
   font-family: "Nunito Sans Semibold";
-  src: url("fonts/Nunito Sans/nunito-sans-semibold.ttf");
+  src: url("../fonts/Nunito Sans/nunito-sans-semibold.ttf");
   font-weight: bold;
 }
 @font-face {
   font-family: "Nunito Sans Black";
-  src: url("fonts/Nunito Sans/nunito-sans-black.ttf");
+  src: url("../fonts/Nunito Sans/nunito-sans-black.ttf");
   font-weight: bold;
 }
 body {
@@ -42,7 +42,7 @@ body form#fields_to_fill {
   display: flex;
   flex-direction: column;
   align-items: center;
-  gap: 15px;
+  gap: 30px;
 }
 body form#fields_to_fill h2 {
   font: bold 26px/47px "Nunito Sans Black", sans-serif;
@@ -61,11 +61,18 @@ body form#fields_to_fill div.row .fields_row {
   display: flex;
   flex-direction: row;
   gap: 15px;
+  width: 1000px;
 }
 body form#fields_to_fill div.row #full_name,
 body form#fields_to_fill div.row #birthday {
   display: flex;
   flex-direction: column;
+}
+body form#fields_to_fill div.row #full_name {
+  flex-grow: 10;
+}
+body form#fields_to_fill div.row #birthday {
+  flex-grow: 1;
 }
 body form#fields_to_fill div.row label,
 body form#fields_to_fill div.row input {
@@ -76,10 +83,10 @@ body form#fields_to_fill div.row label {
   background: #fff;
   text-align: center;
   position: relative;
-  top: 6px;
+  top: 8px;
 }
 body form#fields_to_fill div.row label[for="full_name_field"] {
-  width: 400px;
+  width: 430px;
 }
 body form#fields_to_fill div.row label[for="birthday_field"] {
   width: 130px;
@@ -91,11 +98,7 @@ body form#fields_to_fill div.row input {
   padding: 4px calc(2 * 4px);
   outline: none;
 }
-body form#fields_to_fill div.row input#full_name_field {
-  width: calc(807px - 2 * 4px);
-}
 body form#fields_to_fill div.row input#birthday_field {
-  width: calc(175px - 2 * 4px);
   text-align: center;
 }
 body form#fields_to_fill div.row > .buttons {
@@ -121,4 +124,10 @@ body form#fields_to_fill div.row > .buttons > input[type="button"]#save_employee
 body form#fields_to_fill div.row > .buttons > input[type="button"]#save_draft {
   width: 238px;
 }
-/*# sourceMappingURL=example.css.map */
+body form#fields_to_fill div.row > .buttons > input[type="button"]:hover {
+  background: #394315;
+}
+body form#fields_to_fill div.row > .buttons > input[type="button"]:active {
+  margin-top: 1px;
+}
+/*# sourceMappingURL=add_employee.css.map */
