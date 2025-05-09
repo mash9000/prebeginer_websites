@@ -3,10 +3,11 @@
 <head>
     <meta charset="utf-8"/>
 
-    <title>Жадность флекс-элементов</title>
+    <title>LESS</title>
 
     <link rel="stylesheet" href="styles/reset.css"/>
     <link rel="stylesheet" href="styles/styles.css"/>
+    <link rel="stylesheet" href="styles/prepros_files/example.css"/>
 
     <meta name="viewport" content="width=device-width"/>
     <link rel="stylesheet" href="styles/viewpoints/1920-media.css"/>
@@ -17,22 +18,39 @@
     <link rel="stylesheet" href="styles/viewpoints/376-media.css"/>
 
     <script src="scripts/calculations.js"></script>
-    <!--    <script src="scripts/codeWars.js?v=2"></script>-->
 </head>
 <body>
-<div id="grid">
-    <div>1</div>
-    <div>2</div>
-    <div>3</div>
-    <div>4</div>
-    <div>5</div>
-    <div>6</div>
-    <div>7</div>
-    <div>8</div>
-    <div>9</div>
-    <div>10</div>
-    <div>11</div>
-    <div>12</div>
-</div>
+<aside>
+    <a href="#">Личный состав</a>
+    <a href="#">Регламентирующие документы</a>
+    <a href="#">Приказы</a>
+    <a href="#">Подготовить документы</a>
+</aside>
+<form id="fields_to_fill">
+    <h2>Добавить сотрудника</h2>
+    <div class="row">
+        <h3>Личные данные</h3>
+        <div class="fields_row">
+            <div id="full_name">
+                <label for="full_name_field">Фамилия, имя, отчество (последнее -
+                    при
+                    наличии)</label>
+                <input id="full_name_field" type="text"
+                       placeholder="Иванов Иван Иванович" required minlength="5"
+                       pattern="/^[a-z ,.'-]+$/i">
+            </div>
+            <div id="birthday">
+                <label for="birthday_field">Дата рождения</label>
+                <input id="birthday_field" type="date" required>
+            </div>
+        </div>
+    </div>
+    <div class="row">
+        <div class="buttons">
+            <input type="button" value="Добавить" id="save_employee">
+            <input type="button" value="Сохранить черновик" id="save_draft">
+        </div>
+    </div>
+</form>
 </body>
 </html>

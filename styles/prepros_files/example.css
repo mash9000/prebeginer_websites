@@ -1,0 +1,124 @@
+@font-face {
+  font-family: "Roboto Slab Regular";
+  src: url("fonts/Roboto Slab/RobotoSlab-Regular.ttf");
+  font-style: normal;
+}
+@font-face {
+  font-family: "Nunito Sans Semibold";
+  src: url("fonts/Nunito Sans/nunito-sans-semibold.ttf");
+  font-weight: bold;
+}
+@font-face {
+  font-family: "Nunito Sans Black";
+  src: url("fonts/Nunito Sans/nunito-sans-black.ttf");
+  font-weight: bold;
+}
+body {
+  display: flex;
+  flex-direction: row;
+}
+body aside {
+  width: 316px;
+  height: 100vh;
+  background: #596E10;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 15px;
+}
+body aside a {
+  text-decoration: none;
+  color: #fff;
+  font: bold 18px "Nunito Sans Black", sans-serif;
+  text-transform: uppercase;
+  text-align: center;
+}
+body aside a:hover {
+  text-decoration: underline;
+}
+body form#fields_to_fill {
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 15px;
+}
+body form#fields_to_fill h2 {
+  font: bold 26px/47px "Nunito Sans Black", sans-serif;
+  text-transform: uppercase;
+}
+body form#fields_to_fill div.row {
+  width: 997px;
+  height: 82px;
+  display: flex;
+  flex-direction: column;
+}
+body form#fields_to_fill div.row h3 {
+  font: normal 26px "Nunito Sans Semibold", sans-serif;
+}
+body form#fields_to_fill div.row .fields_row {
+  display: flex;
+  flex-direction: row;
+  gap: 15px;
+}
+body form#fields_to_fill div.row #full_name,
+body form#fields_to_fill div.row #birthday {
+  display: flex;
+  flex-direction: column;
+}
+body form#fields_to_fill div.row label,
+body form#fields_to_fill div.row input {
+  font: normal 16px "Roboto Slab Regular", sans-serif;
+}
+body form#fields_to_fill div.row label {
+  margin-left: 4px;
+  background: #fff;
+  text-align: center;
+  position: relative;
+  top: 6px;
+}
+body form#fields_to_fill div.row label[for="full_name_field"] {
+  width: 400px;
+}
+body form#fields_to_fill div.row label[for="birthday_field"] {
+  width: 130px;
+}
+body form#fields_to_fill div.row input {
+  height: calc(45px - 4 * 4px);
+  border: 1px solid #596E10;
+  border-radius: 4px;
+  padding: 4px calc(2 * 4px);
+  outline: none;
+}
+body form#fields_to_fill div.row input#full_name_field {
+  width: calc(807px - 2 * 4px);
+}
+body form#fields_to_fill div.row input#birthday_field {
+  width: calc(175px - 2 * 4px);
+  text-align: center;
+}
+body form#fields_to_fill div.row > .buttons {
+  width: 100%;
+  height: 45px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  gap: 15px;
+}
+body form#fields_to_fill div.row > .buttons > input[type="button"] {
+  height: inherit;
+  border: none;
+  outline: none;
+  background: #596E10;
+  color: #fff;
+  border-radius: 4px;
+  font: normal 16px "Roboto Slab Regular", sans-serif;
+}
+body form#fields_to_fill div.row > .buttons > input[type="button"]#save_employee {
+  width: 111px;
+}
+body form#fields_to_fill div.row > .buttons > input[type="button"]#save_draft {
+  width: 238px;
+}
+/*# sourceMappingURL=example.css.map */

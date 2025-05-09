@@ -1,5 +1,153 @@
-div {
-  p {
-    font-size: 50px; // Для чека
+@font-face {
+  font-family: "Roboto Slab Regular";
+  src: url("fonts/Roboto Slab/RobotoSlab-Regular.ttf");
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Nunito Sans Semibold";
+  src: url("fonts/Nunito Sans/nunito-sans-semibold.ttf");
+  font-weight: bold;
+}
+
+@font-face {
+  font-family: "Nunito Sans Black";
+  src: url("fonts/Nunito Sans/nunito-sans-black.ttf");
+  font-weight: bold;
+}
+
+@padding-for-input: 4px;
+@border-radius-for-input: 4px;
+@height-of-label: 24px;
+@height-of-input: 45px;
+@step-of-grid: 15px;
+@green-color: #596E10;
+
+@red-color: #9F2619;
+
+body {
+  display: flex;
+  flex-direction: row;
+
+  aside {
+    width: 316px;
+    height: 100vh;
+    background: @green-color;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: @step-of-grid;
+
+    a {
+      text-decoration: none;
+      color: #fff;
+      font: bold 18px "Nunito Sans Black", sans-serif;
+      text-transform: uppercase;
+      text-align: center;
+    }
+
+    a:hover {
+      text-decoration: underline;
+    }
+  }
+
+  form#fields_to_fill {
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: @step-of-grid;
+
+    h2 {
+      font: bold 26px/47px "Nunito Sans Black", sans-serif;
+      text-transform: uppercase;
+    }
+
+    div.row {
+      width: 997px;
+      height: 82px;
+      display: flex;
+      flex-direction: column;
+
+      h3 {
+        font: normal 26px "Nunito Sans Semibold", sans-serif;
+      }
+
+      .fields_row {
+        display: flex;
+        flex-direction: row;
+        gap: @step-of-grid;
+      }
+
+      #full_name, #birthday {
+        display: flex;
+        flex-direction: column;
+      }
+
+      label, input {
+        font: normal 16px "Roboto Slab Regular", sans-serif;
+      }
+
+      label {
+        margin-left: @padding-for-input;
+        background: #fff;
+        text-align: center;
+        position: relative;
+        top: 6px;
+
+        &[for="full_name_field"] {
+          width: 400px;
+        }
+
+        &[for="birthday_field"] {
+          width: 130px;
+        }
+      }
+
+      input {
+        height: calc(@height-of-input - 4 * @padding-for-input);
+        border: 1px solid @green-color;
+        border-radius: @border-radius-for-input;
+        padding: @padding-for-input calc(2 * @padding-for-input);
+        outline: none;
+
+        &#full_name_field {
+          width: calc(807px - 2 * @padding-for-input);
+        }
+
+        &#birthday_field {
+          width: calc(175px - 2 * @padding-for-input);
+          text-align: center;
+        }
+      }
+
+      > .buttons {
+        width: 100%;
+        height: @height-of-input;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        gap: @step-of-grid;
+
+        & > input[type="button"] {
+          height: inherit;
+          border: none;
+          outline: none;
+          background: @green-color;
+          color: #fff;
+          border-radius: @border-radius-for-input;
+          font: normal 16px "Roboto Slab Regular", sans-serif;
+
+          &#save_employee {
+            width: 111px;
+          }
+
+          &#save_draft {
+            width: 238px;
+          }
+        }
+      }
+    }
   }
 }
