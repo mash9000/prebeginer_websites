@@ -7,7 +7,6 @@
 
     <link rel="stylesheet" href="styles/reset.css"/>
     <link rel="stylesheet" href="styles/styles.css"/>
-    <link rel="stylesheet" href="styles/add_employee.css"/>
 
     <meta name="viewport" content="width=device-width"/>
 </head>
@@ -38,10 +37,144 @@
         </div>
     </div>
     <div class="row">
+        <h3>Военная служба</h3>
+        <div class="fields_row">
+            <div id="current_post">
+                <label for="select_post">Текущая должность</label>
+                <select name="post" id="select_post">
+                    <option value="">-- Выберете должность --</option>
+                    <option value="commander_of_a_military_unit">Командир
+                        войсковой части
+                    </option>
+                    <option value="chief_of_staff_of_a_military_unit">&nbsp;&nbsp;Начальник
+                        штаба войсковой части
+                    </option>
+                    <option value="deputy_commander_of_a_military_unit_for_military_political_work">
+                        &nbsp;&nbsp;Заместитель командира войсковой части по
+                        военно-политической работе
+                    </option>
+                    <option value="deputy_commander_of_a_military_unit_for_logistics_chief_of_logistics">
+                        &nbsp;&nbsp;Заместитель командира войсковой части по
+                        тылу - начальник тыла
+                    </option>
+                    <option value="deputy_commander_of_a_military_unit_for_armament_chief_of_a_technical_unit">
+                        &nbsp;&nbsp;Заместитель командира войсковой части по
+                        вооружению - начальник технической части
+                    </option>
+                    <option value="assistant_to_the_military_unit_commander_for_legal_work">
+                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Помощник
+                        командира войсковой части по правовой работе
+                    </option>
+                </select>
+            </div>
+            <div id="military_rank_and_start_date">
+                <div id="military_rank">
+                    <label for="select_military_rank">Воинское звание</label>
+                    <select name="military_rank" id="select_military_rank">
+                        <option value="">-- Выберете воинское звание --</option>
+                        <option value="soldier">Рядовой</option>
+                        <option value="sailor">Матрос</option>
+                        <option value="lance_corporal">Ефрейтор</option>
+                        <option value="senior_seaman">Старший матрос</option>
+                        <option value="junior_sergeant">Младший сержант</option>
+                        <option value="senior_petty_officer_2nd_class">Старшина
+                            2
+                            статьи
+                        </option>
+                        <option value="sergeant">Сержант</option>
+                        <option value="senior_petty_officer_1nd_class">Старшина
+                            1
+                            статьи
+                        </option>
+                        <option value="senior_sergeant">Старший сержант</option>
+                        <option value="chief_petty_officer">Главный старшина
+                        </option>
+                        <option value="senior_petty_officer">Старшина</option>
+                        <option value="warrant_officer">Главный корабельный
+                            старшина
+                        </option>
+                        <option value="ensign">Прапорщик</option>
+                        <option value="midshipman">Мичман</option>
+                        <option value="senior_warrant_officer">Старший прапорщик
+                        </option>
+                        <option value="senior_midshipman">Старший мичман
+                        </option>
+                        <option value="lieutenant">Лейтенант</option>
+                        <option value="senior_lieutenant">Старший лейтенант
+                        </option>
+                        <option value="captain">Капитан</option>
+                        <option value="lieutenant_captain">Капитан-лейтенант
+                        <option value="major">Майор</option>
+                        <option value="captain_3rd_rank">Капитан 3 ранга
+                        </option>
+                        <option value="lieutenant_colonel">Подполковник</option>
+                        <option value="captain_2rd_rank">Капитан 2 ранга
+                        </option>
+                        <option value="colonel">Полковник</option>
+                        <option value="captain_1rd_rank">Капитан 1 ранга
+                        </option>
+                    </select>
+                </div>
+                <div id="start_post">
+                    <label for="start_post_field">Начало службы</label>
+                    <input id="start_post_field" type="date" required>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="row">
         <div class="buttons">
             <input type="button" value="Добавить" id="save_employee">
             <input type="button" value="Сохранить черновик" id="save_draft">
         </div>
+    </div>
+    <div class="row">
+        <h2>Сведения о классной квалификации</h2>
+        <label for="class_qualification_is_missing">Классная квалификация
+            отсутствует</label>
+        <input type="checkbox" id="class_qualification_is_missing">
+        <h2>Данные приказа</h2>
+        <div class="fields_row">
+            <div id="number_of_order">
+                <label for="number_of_order_field">Номер приказа</label>
+                <input type="number" min="1" max="9999"
+                       id="number_of_order_field">
+            </div>
+            <div id="date_of_order">
+                <label for="date_of_order_field">Дата</label>
+                <input type="date" id="date_of_order_field">
+            </div>
+            <div id="resolution">
+                <label for="resolution_field">Резолюция</label>
+                <input type="text" id="resolution_field">
+            </div>
+        </div>
+        <h2>Сведения об имеющейся классной квалификации</h2>
+        <div id="information_about_class_qualification">
+            <label for="level_of_class_qualification">Классная
+                квалификация</label>
+            <select name="level_of_class_qualification"
+                    id="level_of_class_qualification">
+                <option value="">-- Выберете классную квалификацию --</option>
+                <option value="3rd_class_specialist">Специалист 3 класса
+                </option>
+                <option value="2rd_class_specialist">Специалист 2 класса
+                </option>
+                <option value="1rd_class_specialist">Специалист 1 класса
+                </option>
+                <option value="master">Мастер</option>
+            </select>
+            <label for="start_period">Срок</label>
+            <div id="period">
+                <input type="date" id="start_period">
+                <span>-</span>
+                <input type="date" id="end_period">
+            </div>
+        </div>
+    </div>
+    <div class="row">
+        <input type="button" value="Добавить">
+        <input type="button" value="Сохранить черновик">
     </div>
 </form>
 </body>
