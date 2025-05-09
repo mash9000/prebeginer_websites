@@ -1,0 +1,62 @@
+@font-face {
+  font-family: "Nunito Sans Black";
+  src: url("fonts/Nunito Sans/nunito-sans-black.ttf");
+}
+@font-face {
+  font-family: "Nunito Sans Semibold";
+  src: url("fonts/Nunito Sans/nunito-sans-semibold.ttf");
+}
+@font-face {
+  font-family: "Roboto Slab Regular";
+  src: url("fonts/Roboto Slab/RobotoSlab-Regular.ttf");
+}
+body {
+  display: flex;
+  flex-direction: row;
+}
+aside {
+  width: 316px;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 15px;
+  background: #596E10;
+}
+aside a {
+  font: bold 18px "Nunito Sans Black", sans-serif;
+  color: #fff;
+  text-align: center;
+  text-transform: uppercase;
+}
+aside a:hover {
+  text-decoration: underline;
+}
+a {
+  text-decoration: none;
+}
+label,
+input {
+  font: normal 16px "Roboto Slab Regular", sans-serif;
+}
+label {
+  background: #fff;
+  text-align: center;
+  position: relative;
+  left: 4px;
+}
+input {
+  border: 1px solid #596E10;
+  padding: 4px;
+  border-radius: 4px;
+  height: calc(45px - 2 * 4px);
+  outline: none;
+}
+input[type="date"] {
+  text-align: center;
+}
+h2 {
+  font: normal 26px "Nunito Sans Semibold", sans-serif;
+}
+/*# sourceMappingURL=init.css.map */

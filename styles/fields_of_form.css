@@ -1,0 +1,203 @@
+@font-face {
+  font-family: "Nunito Sans Black";
+  src: url("fonts/Nunito Sans/nunito-sans-black.ttf");
+}
+@font-face {
+  font-family: "Nunito Sans Semibold";
+  src: url("fonts/Nunito Sans/nunito-sans-semibold.ttf");
+}
+@font-face {
+  font-family: "Roboto Slab Regular";
+  src: url("fonts/Roboto Slab/RobotoSlab-Regular.ttf");
+}
+body {
+  display: flex;
+  flex-direction: row;
+}
+aside {
+  width: 316px;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 15px;
+  background: #596E10;
+}
+aside a {
+  font: bold 18px "Nunito Sans Black", sans-serif;
+  color: #fff;
+  text-align: center;
+  text-transform: uppercase;
+}
+aside a:hover {
+  text-decoration: underline;
+}
+a {
+  text-decoration: none;
+}
+label,
+input,
+select,
+p {
+  font: normal 16px "Roboto Slab Regular", sans-serif;
+}
+label {
+  background: #fff;
+  text-align: center;
+  position: relative;
+  left: 4px;
+  top: 8px;
+}
+input,
+select,
+#data_about_class_classification {
+  border: 1px solid #596E10;
+  padding: 4px;
+  border-radius: 4px;
+  height: calc(45px - 2 * 4px);
+  outline: none;
+}
+input[type="date"],
+select[type="date"],
+#data_about_class_classification[type="date"],
+input[type="number"],
+select[type="number"],
+#data_about_class_classification[type="number"] {
+  text-align: center;
+}
+select {
+  height: calc(45px + 4px / 2);
+}
+h2 {
+  font: bold 26px "Nunito Sans Black", sans-serif;
+  text-transform: uppercase;
+}
+h3 {
+  font: normal 26px "Nunito Sans Semibold", sans-serif;
+}
+h4 {
+  font: normal 16px "Roboto Slab Regular", sans-serif;
+  margin-top: 15px;
+}
+div.row {
+  width: 997px;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+div.row > div.fields_row {
+  display: flex;
+  flex-direction: row;
+  gap: 15px;
+}
+div.row > div.fields_row > div {
+  display: flex;
+  flex-direction: column;
+}
+form#fields_to_fill {
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  align-items: center;
+}
+form#fields_to_fill label[for="full_name_field"] {
+  width: 400px;
+}
+form#fields_to_fill label[for="birthday_field"] {
+  width: 130px;
+  margin-left: 8px;
+}
+form#fields_to_fill label[for="select_post"] {
+  width: 165px;
+}
+form#fields_to_fill label[for="select_military_rank"] {
+  width: 150px;
+}
+form#fields_to_fill label[for="start_post_field"] {
+  width: 125px;
+}
+form#fields_to_fill label[for="number_of_order_field"] {
+  width: 130px;
+}
+form#fields_to_fill label[for="date_of_order_field"] {
+  width: 50px;
+}
+form#fields_to_fill label[for="resolution_field"] {
+  width: 100px;
+}
+form#fields_to_fill input#full_name_field {
+  width: 110vh;
+}
+form#fields_to_fill input#birthday_field {
+  width: 20vh;
+}
+form#fields_to_fill input#start_post {
+  width: 20vh;
+}
+form#fields_to_fill input#number_of_order_field {
+  width: 140px;
+}
+form#fields_to_fill input#date_of_order_field {
+  width: 20vh;
+}
+form#fields_to_fill input#resolution_field {
+  width: 89vh;
+}
+form#fields_to_fill .special_align {
+  flex-direction: column;
+}
+form#fields_to_fill #military_rank_and_start_date {
+  flex-direction: row;
+  gap: 15px;
+}
+form#fields_to_fill #military_rank_and_start_date #military_rank {
+  display: flex;
+  flex-direction: column;
+}
+form#fields_to_fill #military_rank_and_start_date #military_rank #select_military_rank {
+  width: 40vh;
+}
+form#fields_to_fill #military_rank_and_start_date #start_post {
+  display: flex;
+  flex-direction: column;
+}
+form#fields_to_fill #military_rank_and_start_date #start_post #start_post_field {
+  width: 20vh;
+}
+form#fields_to_fill #data_about_class_classification {
+  width: 427px;
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: left;
+  gap: 15px;
+  align-items: center;
+}
+form#fields_to_fill #data_about_class_classification > input[type="checkbox"] {
+  width: 25.55px;
+  height: 25.55px;
+  background-color: white;
+  border-radius: 50%;
+  border: 1px solid #596E10;
+  appearance: none;
+  -webkit-appearance: none;
+  outline: none;
+  color: #fff;
+  cursor: pointer;
+}
+form#fields_to_fill #data_about_class_classification > input[type="checkbox"]:checked {
+  background: #596E10;
+}
+form#fields_to_fill #data_about_class_classification > label {
+  position: relative;
+  top: 0;
+}
+form#fields_to_fill #information_about_class_qualification {
+  flex-direction: row;
+}
+form#fields_to_fill #information_about_class_qualification > div {
+  display: flex;
+  flex-direction: column;
+}
+/*# sourceMappingURL=fields_of_form.css.map */

@@ -2,12 +2,10 @@
 <html lang="ru">
 <head>
     <meta charset="utf-8"/>
-
     <title>LESS</title>
-
     <link rel="stylesheet" href="styles/reset.css"/>
-    <link rel="stylesheet" href="styles/styles.css"/>
-
+    <link rel="stylesheet" href="styles/init.css"/>
+    <link rel="stylesheet" href="styles/fields_of_form.css"/>
     <meta name="viewport" content="width=device-width"/>
 </head>
 <body>
@@ -38,7 +36,7 @@
     </div>
     <div class="row">
         <h3>Военная служба</h3>
-        <div class="fields_row">
+        <div class="fields_row special_align">
             <div id="current_post">
                 <label for="select_post">Текущая должность</label>
                 <select name="post" id="select_post">
@@ -72,45 +70,50 @@
                     <label for="select_military_rank">Воинское звание</label>
                     <select name="military_rank" id="select_military_rank">
                         <option value="">-- Выберете воинское звание --</option>
+                        <option value="">-- Сухопутные войска --</option>
                         <option value="soldier">Рядовой</option>
-                        <option value="sailor">Матрос</option>
                         <option value="lance_corporal">Ефрейтор</option>
-                        <option value="senior_seaman">Старший матрос</option>
                         <option value="junior_sergeant">Младший сержант</option>
-                        <option value="senior_petty_officer_2nd_class">Старшина
-                            2
-                            статьи
-                        </option>
                         <option value="sergeant">Сержант</option>
-                        <option value="senior_petty_officer_1nd_class">Старшина
-                            1
-                            статьи
-                        </option>
                         <option value="senior_sergeant">Старший сержант</option>
-                        <option value="chief_petty_officer">Главный старшина
-                        </option>
                         <option value="senior_petty_officer">Старшина</option>
-                        <option value="warrant_officer">Главный корабельный
-                            старшина
-                        </option>
                         <option value="ensign">Прапорщик</option>
-                        <option value="midshipman">Мичман</option>
-                        <option value="senior_warrant_officer">Старший прапорщик
-                        </option>
-                        <option value="senior_midshipman">Старший мичман
+                        <option value="senior_warrant_officer">Старший
+                            прапорщик
                         </option>
                         <option value="lieutenant">Лейтенант</option>
                         <option value="senior_lieutenant">Старший лейтенант
                         </option>
                         <option value="captain">Капитан</option>
-                        <option value="lieutenant_captain">Капитан-лейтенант
                         <option value="major">Майор</option>
+                        <option value="lieutenant_colonel">Подполковник</option>
+                        <option value="colonel">Полковник</option>
+                        <option value="">-- Военно-морской флот --</option>
+                        <option value="sailor">Матрос</option>
+                        <option value="senior_seaman">Старший матрос</option>
+                        <option value="senior_petty_officer_2nd_class">Старшина
+                            2 статьи
+                        </option>
+                        <option value="senior_petty_officer_1nd_class">Старшина
+                            1 статьи
+                        </option>
+                        <option value="chief_petty_officer">Главный старшина
+                        </option>
+                        <option value="warrant_officer">Главный корабельный
+                            старшина
+                        </option>
+                        <option value="midshipman">Мичман</option>
+                        <option value="senior_midshipman">Старший мичман
+                        </option>
+                        <option value="lieutenant">Лейтенант</option>
+                        <option value="senior_lieutenant">Старший лейтенант
+                        </option>
+                        <option value="lieutenant_captain">Капитан-лейтенант
+                        </option>
                         <option value="captain_3rd_rank">Капитан 3 ранга
                         </option>
-                        <option value="lieutenant_colonel">Подполковник</option>
                         <option value="captain_2rd_rank">Капитан 2 ранга
                         </option>
-                        <option value="colonel">Полковник</option>
                         <option value="captain_1rd_rank">Капитан 1 ранга
                         </option>
                     </select>
@@ -123,17 +126,13 @@
         </div>
     </div>
     <div class="row">
-        <div class="buttons">
-            <input type="button" value="Добавить" id="save_employee">
-            <input type="button" value="Сохранить черновик" id="save_draft">
+        <h3>Сведения о классной квалификации</h3>
+        <div id="data_about_class_classification">
+            <label for="class_qualification_is_missing">Классная квалификация
+                отсутствует</label>
+            <input type="checkbox" id="class_qualification_is_missing">
         </div>
-    </div>
-    <div class="row">
-        <h2>Сведения о классной квалификации</h2>
-        <label for="class_qualification_is_missing">Классная квалификация
-            отсутствует</label>
-        <input type="checkbox" id="class_qualification_is_missing">
-        <h2>Данные приказа</h2>
+        <h4>Данные приказа</h4>
         <div class="fields_row">
             <div id="number_of_order">
                 <label for="number_of_order_field">Номер приказа</label>
@@ -149,26 +148,31 @@
                 <input type="text" id="resolution_field">
             </div>
         </div>
-        <h2>Сведения об имеющейся классной квалификации</h2>
+        <h4>Сведения об имеющейся классной квалификации</h4>
         <div id="information_about_class_qualification">
-            <label for="level_of_class_qualification">Классная
-                квалификация</label>
-            <select name="level_of_class_qualification"
-                    id="level_of_class_qualification">
-                <option value="">-- Выберете классную квалификацию --</option>
-                <option value="3rd_class_specialist">Специалист 3 класса
-                </option>
-                <option value="2rd_class_specialist">Специалист 2 класса
-                </option>
-                <option value="1rd_class_specialist">Специалист 1 класса
-                </option>
-                <option value="master">Мастер</option>
-            </select>
-            <label for="start_period">Срок</label>
-            <div id="period">
-                <input type="date" id="start_period">
-                <span>-</span>
-                <input type="date" id="end_period">
+            <div id="class_qualification_level_box">
+                <label for="level_of_class_qualification">Классная
+                    квалификация</label>
+                <select name="level_of_class_qualification"
+                        id="level_of_class_qualification">
+                    <option value="">-- Выберете классную квалификацию --
+                    </option>
+                    <option value="3rd_class_specialist">Специалист 3 класса
+                    </option>
+                    <option value="2rd_class_specialist">Специалист 2 класса
+                    </option>
+                    <option value="1rd_class_specialist">Специалист 1 класса
+                    </option>
+                    <option value="master">Мастер</option>
+                </select>
+            </div>
+            <div id="class_qualification_date_box">
+                <label for="start_period">Срок</label>
+                <div id="period">
+                    <input type="date" id="start_period">
+                    <span>-</span>
+                    <input type="date" id="end_period">
+                </div>
             </div>
         </div>
     </div>
@@ -177,5 +181,6 @@
         <input type="button" value="Сохранить черновик">
     </div>
 </form>
+<script src="scripts/script.js"></script>
 </body>
 </html>
